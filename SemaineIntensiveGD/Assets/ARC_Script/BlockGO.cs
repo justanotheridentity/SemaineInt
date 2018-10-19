@@ -5,6 +5,7 @@ using UnityEngine;
 public class BlockGO : MonoBehaviour {
 
     public float speed;
+    public float numberAssign;
 
 
 	// Use this for initialization
@@ -19,4 +20,24 @@ public class BlockGO : MonoBehaviour {
     {
         transform.position += new Vector3(0.0f, 0.0f, -(speed * Time.fixedDeltaTime) )  ;
 	}
+
+    public void GoFast ()
+    {
+
+        StartCoroutine(GoFaster());
+
+    }
+
+    IEnumerator GoFaster()
+    {
+        transform.position += new Vector3(0.0f, 0.0f, -(speed*3 * Time.fixedDeltaTime));
+        yield return new WaitForSeconds(3f);
+        StartCoroutine(GoFaster());
+    }
+
+    public void SetNumber (int numberToSet)
+    {
+        numberAssign = numberToSet;
+    }
+
 }

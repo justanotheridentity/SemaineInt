@@ -5,63 +5,99 @@ using UnityEngine;
 public class Recommence : MonoBehaviour {
 
     public int [] PositionDesCubes;
-    private int i;
-    private int a;
-    private bool changement;
+    
+    private string myString;
+
+    private string aAfficher;
+   
+
+    private string numero;
 
     public GameObject depart;
+
+    public int nbCube;
+
+    //private int[] tableau;
+
+    List<int> listNumber = new List<int>();
 
 
     public void OnTriggerEnter(Collider other)
     {
-
-        if (other.gameObject.tag == "Block") // other =
+        if (other.transform.parent.gameObject != null)
         {
-            other.gameObject.transform.position = new Vector3 ( depart.gameObject.transform.position.x, depart.gameObject.transform.position.y, depart.gameObject.transform.position.z);
+            if (other.transform.parent.gameObject.name == "Ligne") // other =
+            {
+                other.gameObject.transform.position = new Vector3(depart.gameObject.transform.position.x, depart.gameObject.transform.position.y, depart.gameObject.transform.position.z);
 
-            //On executé la fonction avance rapide de l'objet.
+                //other.gameObject.GetComponent<BlockGO>().GoFast();
+
+                //On executé la fonction avance rapide de l'objet.
+            }
         }
-
 
         // On prend un cliché du tableau
+        
+        numero = other.gameObject.tag;
+        Debug.Log(numero);
+        int numeroGameObject = int.Parse(numero);
 
-        int numeroGameObject = int.Parse(other.gameObject.tag);
+        
 
-        PositionDesCubes [0]= numeroGameObject;
 
-        i = 1; //Début du tableau
-        a = 1;
-        changement = false;
-        while (i != 10 ) //10 est le numéro de la vraiable MAX
+
+        for (int i=1; i<nbCube+1;i++)
         {
-            if (changement == true)
-            {
-                if (a != numeroGameObject)
-                {
-                    PositionDesCubes[i] = a;
-                    a = a + 1;
-                }
-                else if (a == numeroGameObject)
-                {
-                    break;
-                }
+            listNumber.Add(i);
+        }
+        
 
-            }
-            else if (numeroGameObject != 10)
-            {
-                PositionDesCubes[i] = numeroGameObject + i + 1;
-                i = i + 1;
-            }
-            else if ( (numeroGameObject+i+1) ==10)
-            {
-                PositionDesCubes[i] = numeroGameObject + i + 1;
-                i = i + 1;
-                changement = true;
-            }
+
+        Cliche(numeroGameObject);
+            
+
+        
+        aAfficher = "";
+
+        for (int b= 0; b<10 ; b =b+1)
+        {
+             myString= PositionDesCubes[b].ToString();
+            
+            aAfficher = aAfficher + "-" + myString; ;
+
 
         }
+        Debug.Log(aAfficher );
+
+        aAfficher = "";
+        for (int b = 0; b < 10; b = b + 1)
+        {
+            myString = listNumber[b].ToString();
+
+            aAfficher = aAfficher + "-" + myString; ;
 
 
+        }
+        Debug.Log(aAfficher);
 
+    }
+
+
+    private void Cliche (int numeroGO)
+    {
+        int caseNumber = numeroGO - 1;
+        for (int i=0; i<nbCube;i++)
+        {
+            PositionDesCubes[i] = listNumber [caseNumber] ;
+            //Debug.Log(tableau[caseNumber]);
+            if(caseNumber==nbCube-1)
+            {
+                caseNumber = 0;
+            }
+            else
+            {
+                caseNumber++;
+            }
+        }
     }
 }

@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33167018418737504}
   - component: {fileID: 23085956102609940}
   - component: {fileID: 65350509251778250}
+  - component: {fileID: 114794905991759142}
   m_Layer: 0
   m_Name: GRILLECUBE (4)
-  m_TagString: Untagged
+  m_TagString: 6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,9 +41,10 @@ GameObject:
   - component: {fileID: 33567680565048826}
   - component: {fileID: 23689275274444374}
   - component: {fileID: 65680665632501024}
+  - component: {fileID: 114403919743770282}
   m_Layer: 0
   m_Name: GRILLECUBE (1)
-  m_TagString: Untagged
+  m_TagString: 9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,9 +60,10 @@ GameObject:
   - component: {fileID: 33509896234718882}
   - component: {fileID: 23477958993546880}
   - component: {fileID: 65134173819549082}
+  - component: {fileID: 114492934540255052}
   m_Layer: 0
   m_Name: GRILLECUBE (5)
-  m_TagString: Untagged
+  m_TagString: 5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,9 +79,10 @@ GameObject:
   - component: {fileID: 33842750477840494}
   - component: {fileID: 23435768984026656}
   - component: {fileID: 65885122733825816}
+  - component: {fileID: 114246024157651362}
   m_Layer: 0
   m_Name: GRILLECUBE (9)
-  m_TagString: Untagged
+  m_TagString: 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,9 +98,10 @@ GameObject:
   - component: {fileID: 33283868013295794}
   - component: {fileID: 23570438585427808}
   - component: {fileID: 65745458637468936}
+  - component: {fileID: 114019278739738140}
   m_Layer: 0
   m_Name: GRILLECUBE (7)
-  m_TagString: Untagged
+  m_TagString: 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,9 +117,10 @@ GameObject:
   - component: {fileID: 33714941392783294}
   - component: {fileID: 23274836317875300}
   - component: {fileID: 65973866145264590}
+  - component: {fileID: 114706618420595932}
   m_Layer: 0
   m_Name: GRILLECUBE (2)
-  m_TagString: Untagged
+  m_TagString: 8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,9 +136,10 @@ GameObject:
   - component: {fileID: 33367447719618566}
   - component: {fileID: 23426712251564320}
   - component: {fileID: 65833720543555684}
+  - component: {fileID: 114361402842398126}
   m_Layer: 0
   m_Name: GRILLECUBE (8)
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,9 +170,10 @@ GameObject:
   - component: {fileID: 33780972276795514}
   - component: {fileID: 23721684503284450}
   - component: {fileID: 65648355011160130}
+  - component: {fileID: 114548690809879720}
   m_Layer: 0
   m_Name: GRILLECUBE (3)
-  m_TagString: Untagged
+  m_TagString: 7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -181,9 +189,10 @@ GameObject:
   - component: {fileID: 33213975544983032}
   - component: {fileID: 23424584239782560}
   - component: {fileID: 65996131934918734}
+  - component: {fileID: 114627301589186278}
   m_Layer: 0
   m_Name: GRILLECUBE (6)
-  m_TagString: Untagged
+  m_TagString: 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,9 +208,10 @@ GameObject:
   - component: {fileID: 33684560039318594}
   - component: {fileID: 23676523889921204}
   - component: {fileID: 65557751175399556}
+  - component: {fileID: 114690079059119200}
   m_Layer: 0
   m_Name: GRILLECUBE
-  m_TagString: Untagged
+  m_TagString: 10
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -899,3 +909,123 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114019278739738140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1408121615303686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f565ee74622c0498eccd8c861c2fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &114246024157651362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1290149921321914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f565ee74622c0498eccd8c861c2fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &114361402842398126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1483821596475654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f565ee74622c0498eccd8c861c2fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &114403919743770282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1030299194879390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f565ee74622c0498eccd8c861c2fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &114492934540255052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1204902060221806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f565ee74622c0498eccd8c861c2fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &114548690809879720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1590798694747854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f565ee74622c0498eccd8c861c2fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &114627301589186278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1594428359191470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f565ee74622c0498eccd8c861c2fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &114690079059119200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1787646123686040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f565ee74622c0498eccd8c861c2fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &114706618420595932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1443952398575972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f565ee74622c0498eccd8c861c2fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &114794905991759142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1016741804600484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f565ee74622c0498eccd8c861c2fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1

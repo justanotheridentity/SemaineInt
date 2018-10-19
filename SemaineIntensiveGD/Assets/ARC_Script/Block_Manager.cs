@@ -18,6 +18,8 @@ public class Block_Manager : MonoBehaviour {
 
     private float temp;
 
+
+    
     
 
 
@@ -36,7 +38,7 @@ public class Block_Manager : MonoBehaviour {
         reste = colonne - reste;
 
 
-        StartCoroutine(SpawnBlockParSeconde());
+        //StartCoroutine(SpawnBlockParSeconde());
 
     }
 	
@@ -48,16 +50,20 @@ public class Block_Manager : MonoBehaviour {
 
     IEnumerator SpawnBlockParSeconde ()
     {
-        NewBlock();
+        NewBlock(5f,0);
         yield return new WaitForSeconds(0.5f);
         StartCoroutine(SpawnBlockParSeconde() );
     }
 
 
 
-    public void NewBlock ()
+    public void NewBlock (float zPosition,int numberOfTheLine)
     {
-        NextBlock = Random.Range(1, 3);
+        
+
+        NextBlock = Random.Range(1, 4);
+
+
 
         temp = Random.Range( (coinHautGauche.transform.position.x) , (coinBasDroite.transform.position.x) );
         Mathf.Floor(temp);
@@ -70,20 +76,23 @@ public class Block_Manager : MonoBehaviour {
         {
             temp = temp + 0.5f;
         }
-
-
+        
+        
 
         if (NextBlock == 1)
         {
-            Instantiate( patternBlock1, new Vector3( temp, 0.5f, 5f), Quaternion.identity) ; //(x,y,z) (x=gauche/droite) (y=avant/arrière) (z=Haut/bas)
+            GameObject CurrentCube = Instantiate( patternBlock1, new Vector3( temp, 0.5f, zPosition), Quaternion.identity); //(x,y,z) (x=gauche/droite) (y=avant/arrière) (z=Haut/bas)
+            CurrentCube.GetComponent<BlockGO>().SetNumber(numberOfTheLine );
+
+            TableauUltimeDesPosition =
         }
         else if (NextBlock == 2)
         {
-            Instantiate(patternBlock2, new Vector3(temp, 0.5f, 5f), Quaternion.identity);
+            Instantiate(patternBlock2, new Vector3(temp, 0.5f, zPosition), Quaternion.identity);
         }
         else if (NextBlock == 3)
         {
-            Instantiate(patternBlock3, new Vector3(temp, 0.5f, 5f), Quaternion.identity);
+            Instantiate(patternBlock3, new Vector3(temp, 0.5f, zPosition), Quaternion.identity);
         }
     }
 
